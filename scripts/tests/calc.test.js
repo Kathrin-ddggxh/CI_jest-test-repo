@@ -11,9 +11,9 @@ describe("Calculator", () => {
         test("should return 73 for 42 + 31", () => {
             expect(addition(42, 31)).toBe(73);
         });
-        test("should return sum of num1 and num2 for num1 + num2", () => {
-            expect(addition(42, "donkey")).toBe("Only enter numbers!");
-        });
+        // test("should return sum of num1 and num2 for num1 + num2", () => {
+        //     expect(addition(42, "donkey")).toBe("Only enter numbers!");
+        // });
     });
     describe("Subtraction function", () => {
 
