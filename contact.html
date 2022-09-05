@@ -22,10 +22,10 @@
     <script type="text/javascript">
         (function () {
             emailjs.init("JfkhknTxbB9A5YIWL");
-            emailjs.send("service_3v384tj", "template_jg2q3eb", {
-                name: "Kay",
-                notes: "The project that I want is..."
-            }, "JfkhknTxbB9A5YIWL");
+            // emailjs.send("service_3v384tj", "template_jg2q3eb", {
+            //     name: "Kay",
+            //     notes: "The project that I want is..."
+            // }, "JfkhknTxbB9A5YIWL");
         })();
     </script>
 </head>
@@ -40,7 +40,7 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname"
                             class="form-control" placeholder="Name"
                             required />
@@ -65,4 +65,5 @@
         </div>
 
     </section>
+    <script src="scripts/sendemails.js"></script>
 </body>
